@@ -1,19 +1,15 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import './App.css';
 import React from 'react';
-import NavBarComponent from './topSection/navbar';
+import MusicVideos from './videoResults/songs';
 
 function App() {
-  return (
-    
+  return(
     <div>
-      <NavBarComponent></NavBarComponent>
-      
+      <MusicVideos></MusicVideos>
     </div>
-      
-    
-  )
-}
+)
+};
 
 export default App;
 

@@ -14,8 +14,8 @@
 //     Route,
 //     Link
 // } from "react-router-dom";
-// import Artists from '../middleSection/artists';
-// import Songs from '../middleSection/songs';
+// import Artists from '../videoResults/artists';
+// import Songs from '../videoResults/songs';
 // import Login from '../signIn/login';
 // import Profile from '../profile';
 // // import Home from "../home";
