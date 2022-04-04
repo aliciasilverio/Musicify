@@ -12,7 +12,7 @@ const Iframe = ({ source }) => {
     return (
         // basic bootstrap classes. you can change with yours.
         <div className="musicvideos">
-            <div className="emdeb-responsive">
+            <div className="embed-responsive">
                 <iframe src={src}></iframe>
             </div>
         </div>

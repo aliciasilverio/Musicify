@@ -3,37 +3,13 @@ import React, {Component} from 'react';
 import InputGroup from "react-bootstrap/InputGroup";
 import FormControl from "react-bootstrap/FormControl";
 import Button from "react-bootstrap/Button";
-import Iframe from './iFrame';
-
-const API = 'AIzaSyAc7BwysLNrkEqWb3vw7_oXa5Ve6vbst6E'
-const result = 10;
 
 
-class MusicVideos extends Component {
 
-constructor(props){
-    super(props);
 
-    this.state = {
-        resultyt: [],
-        val: ""
-    };
-    this.clicked = this.clicked.bind(this);
-}
+class VideosComponent extends Component {
 
-clicked = ()=>{
-    var finalURL = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=${result}&q=${this.state.val}&key=${API}`
-    fetch(finalURL)
-        .then((response)=>response.json())
-        .then((response)=>{
-            console.log("response ----------->", response);
-            const updatedResultyt = response.items.map(obj => "https://www.youtube.com/embed/"+obj.id.videoId);
-            this.setState({ resultyt : updatedResultyt });            
-        })
-        .catch((err)=>{
-            console.error(err)
-        })
-}
+    
 
 render(){
         return(
@@ -50,6 +26,7 @@ render(){
                                 placeholder="Search for Music"
                                 aria-label="Search"
                                 aria-describedby="basic-addon2"
+                                // Where to put this?
                                 onChange={e => this.setState({ val: e.target.value })}
                             />
                             <Button onClick={this.clicked} variant="outline-secondary" id="button-addon2">
@@ -61,21 +38,6 @@ render(){
                     </div>
                  </section>
                    <div>
-                        {
-
-                            
-                            this.state.resultyt.map((links, i) => {
-                               <div> 
-                                   <div className="musicvideos">
-                                        <div className="embed-responsive">
-                                            <iframe src={i}></iframe>
-                                        </div>
-                                  </div>
-                            </div>
-
-                                
-                            })
-                        }
                     </div>
                     </div>
             </div>
@@ -86,4 +48,4 @@ render(){
 
 
 
-export default MusicVideos;
+export default VideosComponent;
