@@ -63,18 +63,39 @@ render(){
                    <div>
                         {
 
-                            
-                            this.state.resultyt.map((links, i) => {
-                               <div> 
-                                   <div className="musicvideos">
-                                        <div className="embed-responsive">
-                                            <iframe src={i}></iframe>
-                                        </div>
-                                  </div>
+                            <div className="musicvideos">
+                                <div className="embed-responsive">
+                                    <iframe src={this.state.resultyt[0]}></iframe>
+                                </div>
+                                <div className="embed-responsive">
+                                    <iframe src={this.state.resultyt[1]}></iframe>
+                                </div>
+                                <div className="embed-responsive">
+                                    <iframe src={this.state.resultyt[2]}></iframe>
+                                </div>
+                                <div className="embed-responsive">
+                                    <iframe src={this.state.resultyt[3]}></iframe>
+                                </div>
+                                <div className="embed-responsive">
+                                    <iframe src={this.state.resultyt[4]}></iframe>
+                                </div>
+                                <div className="embed-responsive">
+                                    <iframe src={this.state.resultyt[5]}></iframe>
+                                </div>
+                                <div className="embed-responsive">
+                                    <iframe src={this.state.resultyt[6]}></iframe>
+                                </div>
+                                <div className="embed-responsive">
+                                    <iframe src={this.state.resultyt[7]}></iframe>
+                                </div>
+                                <div className="embed-responsive">
+                                    <iframe src={this.state.resultyt[8]}></iframe>
+                                </div>
+                                <div className="embed-responsive">
+                                    <iframe src={this.state.resultyt[9]}></iframe>
+                                </div>
                             </div>
-
-                                
-                            })
+                         
                         }
                     </div>
                     </div>
