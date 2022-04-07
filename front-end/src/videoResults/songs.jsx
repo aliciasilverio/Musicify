@@ -3,10 +3,13 @@ import React, {Component} from 'react';
 import InputGroup from "react-bootstrap/InputGroup";
 import FormControl from "react-bootstrap/FormControl";
 import Button from "react-bootstrap/Button";
-import Iframe from './iFrame';
+import Favorites from './main/favorites';
 
-const API = 'AIzaSyAc7BwysLNrkEqWb3vw7_oXa5Ve6vbst6E'
+
+
+const API = 'AIzaSyBMjW8tc-4bYXt_Fbo6pwgq9S31evfL-tE'
 const result = 10;
+
 
 
 class MusicVideos extends Component {
@@ -16,10 +19,33 @@ constructor(props){
 
     this.state = {
         resultyt: [],
-        val: ""
+        val: "",
+        favorites: []
     };
     this.clicked = this.clicked.bind(this);
+    this.addToFavorites = this.addToFavorites.bind(this);
+} 
+
+addToFavorites = (e) => {
+    e.preventDefault();
+    const updatedFavorites = e.target.value;
+    this.setState(prevState => ({favorites: [...prevState.favorites, updatedFavorites]}) );
+    console.log(e.target.value);
 }
+
+deleteVideo = (e) => {
+    e.preventDefault()
+    const deleteVariable = [...this.state.favorites]
+    deleteVariable.pop();
+    this.setState({favorites: deleteVariable});
+}
+
+editVideo = (e) => {
+    e.preventDefault()
+    const editedLink = e.target.value;
+    this.setState({favorites: editedLink});
+}
+
 
 clicked = ()=>{
     var finalURL = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=${result}&q=${this.state.val}&key=${API}`
@@ -41,13 +67,13 @@ render(){
                 <div>
                 <section className="Home">
                     <div className='welcome-section'>
-                        <h1 className="slide-up">Welcome to Musicify</h1>
+                        <h1 className="slide-up">Welcome to Videoify</h1>
                         <div className="Search">
                         <div className="container h-100">
                             <div className="row h-100 justify-content-center align-items-center"></div>
                             <InputGroup className="col-6">
                             <FormControl
-                                placeholder="Search for Music"
+                                placeholder="Search for Videos"
                                 aria-label="Search"
                                 aria-describedby="basic-addon2"
                                 onChange={e => this.setState({ val: e.target.value })}
@@ -65,38 +91,63 @@ render(){
 
                             <div className="musicvideos">
                                 <div className="embed-responsive">
-                                    <iframe src={this.state.resultyt[0]}></iframe>
+                                    <iframe width="560" height="315" title="links" src={this.state.resultyt[0]}></iframe>
+                                    <br />
+                                    <Button value={this.state.resultyt[0]} onClick={this.addToFavorites}>Add to Favorites</Button>
                                 </div>
                                 <div className="embed-responsive">
-                                    <iframe src={this.state.resultyt[1]}></iframe>
+                                    <iframe width="560" height="315" title="links" src={this.state.resultyt[1]}></iframe>
+                                    <br />
+                                    <Button value={this.state.resultyt[1]} onClick={this.addToFavorites}>Add to Favorites</Button>
                                 </div>
                                 <div className="embed-responsive">
-                                    <iframe src={this.state.resultyt[2]}></iframe>
+                                    <iframe width="560" height="315" title="links" src={this.state.resultyt[2]}></iframe>
+                                    <br />
+                                    <Button value={this.state.resultyt[2]} onClick={this.addToFavorites}>Add to Favorites</Button>
                                 </div>
                                 <div className="embed-responsive">
-                                    <iframe src={this.state.resultyt[3]}></iframe>
+                                    <iframe width="560" height="315" title="links" src={this.state.resultyt[3]}></iframe>
+                                    <br />
+                                    <Button value={this.state.resultyt[3]} onClick={this.addToFavorites}>Add to Favorites</Button>
                                 </div>
                                 <div className="embed-responsive">
-                                    <iframe src={this.state.resultyt[4]}></iframe>
+                                    <iframe width="560" height="315" title="links" src={this.state.resultyt[4]}></iframe>
+                                    <br />
+                                    <Button value={this.state.resultyt[4]} onClick={this.addToFavorites}>Add to Favorites</Button>
                                 </div>
                                 <div className="embed-responsive">
-                                    <iframe src={this.state.resultyt[5]}></iframe>
+                                    <iframe width="560" height="315" title="links" src={this.state.resultyt[5]}></iframe>
+                                    <br />
+                                    <Button value={this.state.resultyt[5]} onClick={this.addToFavorites}>Add to Favorites</Button>
                                 </div>
                                 <div className="embed-responsive">
-                                    <iframe src={this.state.resultyt[6]}></iframe>
+                                    <iframe width="560" height="315" title="links" src={this.state.resultyt[6]}></iframe>
+                                    <br />
+                                    <Button value={this.state.resultyt[6]} onClick={this.addToFavorites}>Add to Favorites</Button>
                                 </div>
                                 <div className="embed-responsive">
-                                    <iframe src={this.state.resultyt[7]}></iframe>
+                                    <iframe width="560" height="315" title="links" src={this.state.resultyt[7]}></iframe>
+                                    <br />
+                                    <Button value={this.state.resultyt[7]} onClick={this.addToFavorites}>Add to Favorites</Button>
                                 </div>
                                 <div className="embed-responsive">
-                                    <iframe src={this.state.resultyt[8]}></iframe>
+                                    <iframe width="560" height="315" title="links" src={this.state.resultyt[8]}></iframe>
+                                    <br />
+                                    <Button value={this.state.resultyt[8]} onClick={this.addToFavorites}>Add to Favorites</Button>
                                 </div>
                                 <div className="embed-responsive">
-                                    <iframe src={this.state.resultyt[9]}></iframe>
+                                    <iframe width="560" height="315" title="links" src={this.state.resultyt[9]}></iframe>
+                                    <br />
+                                    <Button value={this.state.resultyt[9]} onClick={this.addToFavorites}>Add to Favorites</Button>
                                 </div>
                             </div>
                          
                         }
+                        <div><Favorites deleteVideo={this.deleteVideo} favorites = {this.state.favorites}/></div>
+                        <div>
+                            <input type="text" onChange={event => this.setState({favorites: [event.target.value]})}/>
+                            <p>Paste Youtube Link to add a custom favorite</p>
+                        </div>
                     </div>
                     </div>
             </div>
