@@ -8,7 +8,7 @@ const Crud = (props) => {
 
     return(
         <div>
-            <Button onClick={props.deleteVideo}>Delete</Button>
+            <Button variant="btn btn-danger" onClick={props.deleteVideo}>Delete</Button>
         </div>
     )
 }

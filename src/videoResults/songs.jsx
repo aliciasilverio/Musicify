@@ -1,14 +1,12 @@
 
 import React, {Component} from 'react';
-import InputGroup from "react-bootstrap/InputGroup";
-import FormControl from "react-bootstrap/FormControl";
-import Button from "react-bootstrap/Button";
+import { InputGroup, FormControl, Button, Container, Row, Col } from 'react-bootstrap';
 import Favorites from './main/favorites';
 
 
 
 const API = 'AIzaSyBMjW8tc-4bYXt_Fbo6pwgq9S31evfL-tE'
-const result = 10;
+const result = 20;
 
 
 
@@ -89,58 +87,168 @@ render(){
                    <div>
                         {
 
-                            <div className="musicvideos">
-                                <div className="embed-responsive">
-                                    <iframe width="560" height="315" title="links" src={this.state.resultyt[0]}></iframe>
-                                    <br />
-                                    <Button value={this.state.resultyt[0]} onClick={this.addToFavorites}>Add to Favorites</Button>
-                                </div>
-                                <div className="embed-responsive">
-                                    <iframe width="560" height="315" title="links" src={this.state.resultyt[1]}></iframe>
-                                    <br />
-                                    <Button value={this.state.resultyt[1]} onClick={this.addToFavorites}>Add to Favorites</Button>
-                                </div>
-                                <div className="embed-responsive">
-                                    <iframe width="560" height="315" title="links" src={this.state.resultyt[2]}></iframe>
-                                    <br />
-                                    <Button value={this.state.resultyt[2]} onClick={this.addToFavorites}>Add to Favorites</Button>
-                                </div>
-                                <div className="embed-responsive">
-                                    <iframe width="560" height="315" title="links" src={this.state.resultyt[3]}></iframe>
-                                    <br />
-                                    <Button value={this.state.resultyt[3]} onClick={this.addToFavorites}>Add to Favorites</Button>
-                                </div>
-                                <div className="embed-responsive">
-                                    <iframe width="560" height="315" title="links" src={this.state.resultyt[4]}></iframe>
-                                    <br />
-                                    <Button value={this.state.resultyt[4]} onClick={this.addToFavorites}>Add to Favorites</Button>
-                                </div>
-                                <div className="embed-responsive">
-                                    <iframe width="560" height="315" title="links" src={this.state.resultyt[5]}></iframe>
-                                    <br />
-                                    <Button value={this.state.resultyt[5]} onClick={this.addToFavorites}>Add to Favorites</Button>
-                                </div>
-                                <div className="embed-responsive">
-                                    <iframe width="560" height="315" title="links" src={this.state.resultyt[6]}></iframe>
-                                    <br />
-                                    <Button value={this.state.resultyt[6]} onClick={this.addToFavorites}>Add to Favorites</Button>
-                                </div>
-                                <div className="embed-responsive">
-                                    <iframe width="560" height="315" title="links" src={this.state.resultyt[7]}></iframe>
-                                    <br />
-                                    <Button value={this.state.resultyt[7]} onClick={this.addToFavorites}>Add to Favorites</Button>
-                                </div>
-                                <div className="embed-responsive">
-                                    <iframe width="560" height="315" title="links" src={this.state.resultyt[8]}></iframe>
-                                    <br />
-                                    <Button value={this.state.resultyt[8]} onClick={this.addToFavorites}>Add to Favorites</Button>
-                                </div>
-                                <div className="embed-responsive">
-                                    <iframe width="560" height="315" title="links" src={this.state.resultyt[9]}></iframe>
-                                    <br />
-                                    <Button value={this.state.resultyt[9]} onClick={this.addToFavorites}>Add to Favorites</Button>
-                                </div>
-                            </div>
+                        <Container className="musicvideos">
+                            <Row>
+                                <Col>
+                                    <div className="embed-responsive">
+                                        <iframe width="560" height="315" title="links" src={this.state.resultyt[0]}></iframe>
+                                        <br />
+                                        <Button value={this.state.resultyt[0]} onClick={this.addToFavorites}>Add to Favorites</Button>
+                                    </div>
+                                </Col>
+                                <Col>
+                                    <div className="embed-responsive">
+                                        <iframe width="560" height="315" title="links" src={this.state.resultyt[1]}></iframe>
+                                        <br />
+                                        <Button value={this.state.resultyt[1]} onClick={this.addToFavorites}>Add to Favorites</Button>
+                                    </div>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col>
+                                    <div className="embed-responsive">
+                                        <iframe width="560" height="315" title="links" src={this.state.resultyt[2]}></iframe>
+                                        <br />
+                                        <Button value={this.state.resultyt[2]} onClick={this.addToFavorites}>Add to Favorites</Button>
+                                    </div>
+                                </Col>
+                                <Col>
+                                    <div className="embed-responsive">
+                                        <iframe width="560" height="315" title="links" src={this.state.resultyt[3]}></iframe>
+                                        <br />
+                                        <Button value={this.state.resultyt[3]} onClick={this.addToFavorites}>Add to Favorites</Button>
+                                    </div>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col>
+                                    <div className="embed-responsive">
+                                        <iframe width="560" height="315" title="links" src={this.state.resultyt[4]}></iframe>
+                                        <br />
+                                        <Button value={this.state.resultyt[4]} onClick={this.addToFavorites}>Add to Favorites</Button>
+                                    </div>
+                                </Col>
+                                <Col>
+                                    <div className="embed-responsive">
+                                        <iframe width="560" height="315" title="links" src={this.state.resultyt[5]}></iframe>
+                                        <br />
+                                        <Button value={this.state.resultyt[5]} onClick={this.addToFavorites}>Add to Favorites</Button>
+                                    </div>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col>
+                                    <div className="embed-responsive">
+                                        <iframe width="560" height="315" title="links" src={this.state.resultyt[6]}></iframe>
+                                        <br />
+                                        <Button value={this.state.resultyt[6]} onClick={this.addToFavorites}>Add to Favorites</Button>
+                                    </div>
+                                </Col>
+                                <Col>
+                                    <div className="embed-responsive">
+                                        <iframe width="560" height="315" title="links" src={this.state.resultyt[7]}></iframe>
+                                        <br />
+                                        <Button value={this.state.resultyt[7]} onClick={this.addToFavorites}>Add to Favorites</Button>
+                                    </div>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col>
+                                    <div className="embed-responsive">
+                                        <iframe width="560" height="315" title="links" src={this.state.resultyt[8]}></iframe>
+                                        <br />
+                                        <Button value={this.state.resultyt[8]} onClick={this.addToFavorites}>Add to Favorites</Button>
+                                    </div>
+                                </Col>
+                                <Col>
+                                    <div className="embed-responsive">
+                                        <iframe width="560" height="315" title="links" src={this.state.resultyt[9]}></iframe>
+                                        <br />
+                                        <Button value={this.state.resultyt[9]} onClick={this.addToFavorites}>Add to Favorites</Button>
+                                    </div>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col>
+                                    <div className="embed-responsive">
+                                        <iframe width="560" height="315" title="links" src={this.state.resultyt[10]}></iframe>
+                                        <br />
+                                        <Button value={this.state.resultyt[10]} onClick={this.addToFavorites}>Add to Favorites</Button>
+                                    </div>
+                                </Col>
+                                <Col>
+                                    <div className="embed-responsive">
+                                        <iframe width="560" height="315" title="links" src={this.state.resultyt[11]}></iframe>
+                                        <br />
+                                        <Button value={this.state.resultyt[11]} onClick={this.addToFavorites}>Add to Favorites</Button>
+                                    </div>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col>
+                                    <div className="embed-responsive">
+                                        <iframe width="560" height="315" title="links" src={this.state.resultyt[12]}></iframe>
+                                        <br />
+                                        <Button value={this.state.resultyt[12]} onClick={this.addToFavorites}>Add to Favorites</Button>
+                                    </div>
+                                </Col>
+                                <Col>
+                                    <div className="embed-responsive">
+                                        <iframe width="560" height="315" title="links" src={this.state.resultyt[13]}></iframe>
+                                        <br />
+                                        <Button value={this.state.resultyt[13]} onClick={this.addToFavorites}>Add to Favorites</Button>
+                                    </div>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col>
+                                    <div className="embed-responsive">
+                                        <iframe width="560" height="315" title="links" src={this.state.resultyt[14]}></iframe>
+                                        <br />
+                                        <Button value={this.state.resultyt[14]} onClick={this.addToFavorites}>Add to Favorites</Button>
+                                    </div>
+                                </Col>
+                                <Col>
+                                    <div className="embed-responsive">
+                                        <iframe width="560" height="315" title="links" src={this.state.resultyt[15]}></iframe>
+                                        <br />
+                                        <Button value={this.state.resultyt[15]} onClick={this.addToFavorites}>Add to Favorites</Button>
+                                    </div>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col>
+                                    <div className="embed-responsive">
+                                        <iframe width="560" height="315" title="links" src={this.state.resultyt[16]}></iframe>
+                                        <br />
+                                        <Button value={this.state.resultyt[16]} onClick={this.addToFavorites}>Add to Favorites</Button>
+                                    </div>
+                                </Col>
+                                <Col>
+                                    <div className="embed-responsive">
+                                        <iframe width="560" height="315" title="links" src={this.state.resultyt[17]}></iframe>
+                                        <br />
+                                        <Button value={this.state.resultyt[17]} onClick={this.addToFavorites}>Add to Favorites</Button>
+                                    </div>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col>
+                                    <div className="embed-responsive">
+                                        <iframe width="560" height="315" title="links" src={this.state.resultyt[18]}></iframe>
+                                        <br />
+                                        <Button value={this.state.resultyt[18]} onClick={this.addToFavorites}>Add to Favorites</Button>
+                                    </div>
+                                </Col>
+                                <Col>
+                                    <div className="embed-responsive">
+                                        <iframe width="560" height="315" title="links" src={this.state.resultyt[19]}></iframe>
+                                        <br />
+                                        <Button value={this.state.resultyt[19]} onClick={this.addToFavorites}>Add to Favorites</Button>
+                                    </div>
+                                </Col>
+                            </Row>
+                            </Container>
                          
                         }
                         <div><Favorites deleteVideo={this.deleteVideo} favorites = {this.state.favorites}/></div>
