@@ -61,7 +61,9 @@ clicked = ()=>{
 
 render(){
         return(
+            
             <div>
+                 
                 <div>
                 <section className="Home">
                     <div className='welcome-section'>
@@ -91,30 +93,30 @@ render(){
                             <Row>
                                 <Col>
                                     <div className="embed-responsive">
-                                        <iframe width="560" height="315" title="links" src={this.state.resultyt[0]}></iframe>
+                                        <iframe allowfullscreen width="560" height="315" title="links" src={this.state.resultyt[0]}></iframe> 
                                         <br />
                                         <Button value={this.state.resultyt[0]} onClick={this.addToFavorites}>Add to Favorites</Button>
                                     </div>
                                 </Col>
                                 <Col>
                                     <div className="embed-responsive">
-                                        <iframe width="560" height="315" title="links" src={this.state.resultyt[1]}></iframe>
+                                        <iframe allowfullscreen width="560" height="315" title="links" src={this.state.resultyt[1]}></iframe> 
                                         <br />
-                                        <Button value={this.state.resultyt[1]} onClick={this.addToFavorites}>Add to Favorites</Button>
+                                        <Button favoritesvalue={this.state.resultyt[1]} onClick={this.addToFavorites}>Add to Favorites</Button>
                                     </div>
                                 </Col>
                             </Row>
                             <Row>
                                 <Col>
                                     <div className="embed-responsive">
-                                        <iframe width="560" height="315" title="links" src={this.state.resultyt[2]}></iframe>
+                                        <iframe allowfullscreen width="560" height="315" title="links" src={this.state.resultyt[2]}></iframe> 
                                         <br />
                                         <Button value={this.state.resultyt[2]} onClick={this.addToFavorites}>Add to Favorites</Button>
                                     </div>
                                 </Col>
                                 <Col>
                                     <div className="embed-responsive">
-                                        <iframe width="560" height="315" title="links" src={this.state.resultyt[3]}></iframe>
+                                        <iframe allowfullscreen width="560" height="315" title="links" src={this.state.resultyt[3]}></iframe> 
                                         <br />
                                         <Button value={this.state.resultyt[3]} onClick={this.addToFavorites}>Add to Favorites</Button>
                                     </div>
@@ -123,14 +125,14 @@ render(){
                             <Row>
                                 <Col>
                                     <div className="embed-responsive">
-                                        <iframe width="560" height="315" title="links" src={this.state.resultyt[4]}></iframe>
+                                        <iframe allowfullscreen width="560" height="315" title="links" src={this.state.resultyt[4]}></iframe> 
                                         <br />
                                         <Button value={this.state.resultyt[4]} onClick={this.addToFavorites}>Add to Favorites</Button>
                                     </div>
                                 </Col>
                                 <Col>
                                     <div className="embed-responsive">
-                                        <iframe width="560" height="315" title="links" src={this.state.resultyt[5]}></iframe>
+                                        <iframe allowfullscreen width="560" height="315" title="links" src={this.state.resultyt[5]}></iframe> 
                                         <br />
                                         <Button value={this.state.resultyt[5]} onClick={this.addToFavorites}>Add to Favorites</Button>
                                     </div>
@@ -139,14 +141,14 @@ render(){
                             <Row>
                                 <Col>
                                     <div className="embed-responsive">
-                                        <iframe width="560" height="315" title="links" src={this.state.resultyt[6]}></iframe>
+                                        <iframe allowfullscreen width="560" height="315" title="links" src={this.state.resultyt[6]}></iframe> 
                                         <br />
                                         <Button value={this.state.resultyt[6]} onClick={this.addToFavorites}>Add to Favorites</Button>
                                     </div>
                                 </Col>
                                 <Col>
                                     <div className="embed-responsive">
-                                        <iframe width="560" height="315" title="links" src={this.state.resultyt[7]}></iframe>
+                                        <iframe allowfullscreen width="560" height="315" title="links" src={this.state.resultyt[7]}></iframe> 
                                         <br />
                                         <Button value={this.state.resultyt[7]} onClick={this.addToFavorites}>Add to Favorites</Button>
                                     </div>
@@ -155,14 +157,14 @@ render(){
                             <Row>
                                 <Col>
                                     <div className="embed-responsive">
-                                        <iframe width="560" height="315" title="links" src={this.state.resultyt[8]}></iframe>
+                                        <iframe allowfullscreen width="560" height="315" title="links" src={this.state.resultyt[8]}></iframe> 
                                         <br />
                                         <Button value={this.state.resultyt[8]} onClick={this.addToFavorites}>Add to Favorites</Button>
                                     </div>
                                 </Col>
                                 <Col>
                                     <div className="embed-responsive">
-                                        <iframe width="560" height="315" title="links" src={this.state.resultyt[9]}></iframe>
+                                        <iframe allowfullscreen width="560" height="315" title="links" src={this.state.resultyt[9]}></iframe> 
                                         <br />
                                         <Button value={this.state.resultyt[9]} onClick={this.addToFavorites}>Add to Favorites</Button>
                                     </div>
@@ -171,14 +173,14 @@ render(){
                             <Row>
                                 <Col>
                                     <div className="embed-responsive">
-                                        <iframe width="560" height="315" title="links" src={this.state.resultyt[10]}></iframe>
+                                        <iframe allowfullscreen width="560" height="315" title="links" src={this.state.resultyt[10]}></iframe> 
                                         <br />
                                         <Button value={this.state.resultyt[10]} onClick={this.addToFavorites}>Add to Favorites</Button>
                                     </div>
                                 </Col>
                                 <Col>
                                     <div className="embed-responsive">
-                                        <iframe width="560" height="315" title="links" src={this.state.resultyt[11]}></iframe>
+                                        <iframe allowfullscreen width="560" height="315" title="links" src={this.state.resultyt[11]}></iframe> 
                                         <br />
                                         <Button value={this.state.resultyt[11]} onClick={this.addToFavorites}>Add to Favorites</Button>
                                     </div>
@@ -187,14 +189,14 @@ render(){
                             <Row>
                                 <Col>
                                     <div className="embed-responsive">
-                                        <iframe width="560" height="315" title="links" src={this.state.resultyt[12]}></iframe>
+                                        <iframe allowfullscreen width="560" height="315" title="links" src={this.state.resultyt[12]}></iframe> 
                                         <br />
                                         <Button value={this.state.resultyt[12]} onClick={this.addToFavorites}>Add to Favorites</Button>
                                     </div>
                                 </Col>
                                 <Col>
                                     <div className="embed-responsive">
-                                        <iframe width="560" height="315" title="links" src={this.state.resultyt[13]}></iframe>
+                                        <iframe allowfullscreen width="560" height="315" title="links" src={this.state.resultyt[13]}></iframe> 
                                         <br />
                                         <Button value={this.state.resultyt[13]} onClick={this.addToFavorites}>Add to Favorites</Button>
                                     </div>
@@ -203,14 +205,14 @@ render(){
                             <Row>
                                 <Col>
                                     <div className="embed-responsive">
-                                        <iframe width="560" height="315" title="links" src={this.state.resultyt[14]}></iframe>
+                                        <iframe allowfullscreen width="560" height="315" title="links" src={this.state.resultyt[14]}></iframe> 
                                         <br />
                                         <Button value={this.state.resultyt[14]} onClick={this.addToFavorites}>Add to Favorites</Button>
                                     </div>
                                 </Col>
                                 <Col>
                                     <div className="embed-responsive">
-                                        <iframe width="560" height="315" title="links" src={this.state.resultyt[15]}></iframe>
+                                        <iframe allowfullscreen width="560" height="315" title="links" src={this.state.resultyt[15]}></iframe> 
                                         <br />
                                         <Button value={this.state.resultyt[15]} onClick={this.addToFavorites}>Add to Favorites</Button>
                                     </div>
@@ -219,14 +221,14 @@ render(){
                             <Row>
                                 <Col>
                                     <div className="embed-responsive">
-                                        <iframe width="560" height="315" title="links" src={this.state.resultyt[16]}></iframe>
+                                        <iframe allowfullscreen width="560" height="315" title="links" src={this.state.resultyt[16]}></iframe> 
                                         <br />
                                         <Button value={this.state.resultyt[16]} onClick={this.addToFavorites}>Add to Favorites</Button>
                                     </div>
                                 </Col>
                                 <Col>
                                     <div className="embed-responsive">
-                                        <iframe width="560" height="315" title="links" src={this.state.resultyt[17]}></iframe>
+                                        <iframe allowfullscreen width="560" height="315" title="links" src={this.state.resultyt[17]}></iframe> 
                                         <br />
                                         <Button value={this.state.resultyt[17]} onClick={this.addToFavorites}>Add to Favorites</Button>
                                     </div>
@@ -235,14 +237,14 @@ render(){
                             <Row>
                                 <Col>
                                     <div className="embed-responsive">
-                                        <iframe width="560" height="315" title="links" src={this.state.resultyt[18]}></iframe>
+                                        <iframe allowfullscreen width="560" height="315" title="links" src={this.state.resultyt[18]}></iframe> 
                                         <br />
                                         <Button value={this.state.resultyt[18]} onClick={this.addToFavorites}>Add to Favorites</Button>
                                     </div>
                                 </Col>
                                 <Col>
                                     <div className="embed-responsive">
-                                        <iframe width="560" height="315" title="links" src={this.state.resultyt[19]}></iframe>
+                                        <iframe allowfullscreen width="560" height="315" title="links" src={this.state.resultyt[19]}></iframe> 
                                         <br />
                                         <Button value={this.state.resultyt[19]} onClick={this.addToFavorites}>Add to Favorites</Button>
                                     </div>
