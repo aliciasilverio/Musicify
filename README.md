@@ -10,4 +10,5 @@
 
 ### View: Backend [here]([https://github.com/aliciasilverio/Video-ify-back-end])!
 
-## Deployed app is currently under construction ![](https://media.giphy.com/media/cfGmVRsJI6wq6noGxP/giphy.gif)
+## Deployed app is currently under construction 
+![](https://media.giphy.com/media/cfGmVRsJI6wq6noGxP/giphy.gif)
