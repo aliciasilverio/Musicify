@@ -9,6 +9,5 @@
 ##### Overall, Videoify is a convenient and user-friendly way for music lovers to keep track of their favorite YouTube videos and easily access them whenever they want.
 
 ### View: Backend [here]([https://github.com/aliciasilverio/Video-ify-back-end])!
-
-## Deployed app is currently under construction 
+ 
 
