@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import './App.css';
 import React from 'react';
-import MusicVideos from './videoResults/songs';
+import MusicVideos from './videoResults/musicVideos';
 // import { Route, Routes } from 'react-router-dom'
 
 function App() {
